@@ -9,13 +9,21 @@ import org.springframework.web.bind.annotation.RestController;
 public class TestController {
     //private field for the dependency
     private Coach myCoach;
+
+     //Constructor Injection
+    //    @Autowired
+    //    public TestController(Coach theCoach){
+   //        myCoach = theCoach;
+   //    }
+
+    //Setter Injection
     @Autowired
-    public TestController(Coach theCoach){
+    public void setCoach(Coach theCoach){
         myCoach = theCoach;
     }
 
     @GetMapping("/dailyworkout")
-    public String getDailyWorkout(){
+    public String getDailyWorkout() {
         return myCoach.getDailyWorkout();
     }
 }
