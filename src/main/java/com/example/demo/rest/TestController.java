@@ -13,7 +13,7 @@ public class TestController {
 
     //Constructor Injection
     @Autowired
-    public TestController(@Qualifier("tennisCoach") Coach theCoach) {
+    public TestController(Coach theCoach) {
         myCoach = theCoach;
     }
 
