@@ -14,6 +14,7 @@ public class TestController {
     //Constructor Injection
     @Autowired
     public TestController(Coach theCoach) {
+        System.out.println("In Constructor: "+getClass().getSimpleName());
         myCoach = theCoach;
     }
 
