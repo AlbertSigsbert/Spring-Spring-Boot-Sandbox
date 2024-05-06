@@ -13,7 +13,7 @@ public class TestController {
 
     //Constructor Injection
     @Autowired
-    public TestController(Coach theCoach) {
+    public TestController(@Qualifier("wickets") Coach theCoach) {
         System.out.println("In Constructor: "+getClass().getSimpleName());
         myCoach = theCoach;
     }

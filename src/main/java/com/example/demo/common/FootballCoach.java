@@ -16,15 +16,15 @@ public class FootballCoach implements Coach {
     }
 
     //define init method
-     @PostConstruct
-     public void  doMyStartupStuff(){
-         System.out.println("In doMyStartupStaff(): " +getClass().getSimpleName());
-     }
-    //define destroy method
-    @PreDestroy
-    public void doMyCleanupStuff(){
-        System.out.println("In doMyCleanupStaff(): " +getClass().getSimpleName());
-    }
+//     @PostConstruct
+//     public void  doMyStartupStuff(){
+//         System.out.println("In doMyStartupStaff(): " +getClass().getSimpleName());
+//     }
+//    //define destroy method
+//    @PreDestroy
+//    public void doMyCleanupStuff(){
+//        System.out.println("In doMyCleanupStaff(): " +getClass().getSimpleName());
+//    }
     @Override
     public String getDailyWorkout() {
         return "Run 10 laps around the pitch";
